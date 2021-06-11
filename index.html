@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/KePixel (1).png" />
+    <title>KePixel</title>
+    <style>
+        *{
+          box-sizing: border-box;
+          margin: 0px;
+        } 
+        body{
+          background-color: white;
+        }
+        /*celulares*/
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}  
+        nav{
+          position: fixed;
+          background-color:black;
+          color:white;
+          height: 60px;       
+
+          text-align: right;
+          box-shadow: 0 0 10px red;
+          margin:0px;
+          width:100%;
+        } 
+        .imagen1{
+          float:right;
+          width: 90px;
+          height: auto;
+          margin-top: 0px;
+        }
+        .opciones{
+            display:none;
+        }
+        .navi a{
+            text-decoration: none;
+            color: white;
+        }
+        .navi2{
+            float:left;
+            background:transparent;
+            display:block;
+            border:1px solid transparent;
+            padding:15px 10px;
+            text-shadow: 0px 0px 15px white;
+            text-transform: uppercase;
+            font-size: 2vh;
+        }
+        .navi2 ul li{
+            float:right;
+            background:rgb(180, 57, 57);
+            display: block;
+            text-align: center;
+            border:1px solid transparent;
+            padding: 10px 10px;
+            text-shadow: 0px 0px 15px white;
+            text-transform: uppercase;
+            border-radius: 35px;
+            margin-top:5px;
+            width: 170px;
+            font-size:15px;
+        }
+        .navi2:hover {
+            background-color:white;
+            color:black;
+            text-shadow: 0px 0px 15px rgb(180, 57, 57);
+            border-radius: 35px;
+        }
+        .navi2:hover > a{
+            color:black;
+        }
+        .navi2 ul{
+            display:none;
+            position:absolute;
+            min-width:140px;
+        }
+        .navi2:hover > ul {
+            display:block;
+            margin-right:90px;
+            margin-top: 30px
+        }
+        .presentacion{
+            margin-top:60px;
+            background-image:url(https://www.solofondos.com/wp-content/uploads/2016/09/3040.jpg);
+            color:white;
+            display: inline-block;
+        }
+        .titulo h1{
+            text-align: center;
+            font-size: 7vh;
+            font-family: High Jersey;
+            text-shadow: 0px 0px 15px white;
+        }  
+        .cuadro1{
+            text-align: justify;
+            font-size: 2vh;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            padding-left: 10px;
+            padding-right: 10px;
+        }  
+        .cuadro2{
+            background-color: transparent;
+            margin:0px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .cuadro2 img{
+            width:100%;
+            height: 300px;
+        } 
+        .boton{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .boton a{
+            text-decoration: none;
+            color:white;
+            display: inline-block;
+            padding:15px 20px;
+            width: 100%;
+            background-color: rgb(138, 6, 6);
+            font-size:3vh;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 25px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            text-align:center;
+        }  
+        .boton a:hover{
+            background-color: white;
+            color: rgb(138, 6, 6);
+        }
+        .ancla{
+            text-align: left;  
+        }
+        .ancla a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5vh;
+            display: inline-block;
+            padding:25px 20px;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px rgb(180, 57, 57);
+            border:none;
+            outline:none;
+            border-left: 5px solid white;
+            margin-top: 30px;
+            margin-left: 30px; 
+        }
+        .espacio{
+            height:35px;
+        }
+        .apps{
+            padding-top: 90px;
+        }
+        .apps h1{
+            text-align: center;
+            font-size: 6vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px black; 
+        }
+        .titulo2{
+            margin-top: 20px;
+            text-align: center;
+            font-size: 5vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; 
+        }
+        .contenido1{
+            float:right;
+            margin-top: 30px;
+        }
+        .contenido1 p, .contenido1 ol{
+            text-align: justify;
+            font-size: 100%;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            float:right;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .contenido1 img{
+            float:left;
+            width:99%;
+            margin-bottom: 100px;
+        }
+        .imagen3{
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 30px;
+            margin-bottom: 40px;
+
+        }
+        .imagen3 img{
+            width:100%;
+            height: auto;
+            float:left;
+            height:560px;
+        }
+        .webs h1{
+            text-align: center;
+            font-size: 6vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px black;
+        }
+        .titulo3{
+            text-align: center;
+            font-size: 5vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; 
+        }
+        .contenido2{
+            float:right;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+        .contenido2 p, .contenido2 ul{
+            text-align: justify;
+            font-size: 100%;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            float:right;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .contenido2 img{
+            float:left;
+            width:99%;
+            margin-bottom: 100px;
+        }
+        .imagen4{
+            margin:0px;
+            float:right;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .imagen4 img{
+            width:99%;
+            height: auto;
+            float:left;
+            height:210px;
+            margin-bottom:5px;
+            border-radius: 15px;
+            border:1px solid red;
+        }
+        .desa{
+            margin-top: 120px;
+        }
+        .desa h1{
+            text-align: center;
+            font-size: 6vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 0 0 20px black;
+        }
+        .titulo4{
+            text-align: center;
+            font-size: 5vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sas-serif;
+            font-weight: bold; 
+        }
+        .contenido3{
+            float:right;
+            margin-top: 5px;
+            margin-bottom: 100px;
+        }
+        .contenido3 p{
+            text-align: justify;
+            font-size: 100%;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            float:right;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .imagen5{
+            margin:0px;
+            float:right;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .imagen5 img{
+            width:99%;
+            height: auto;
+            float:left;
+            height:210px;
+            margin-bottom:5px;
+            border-radius: 15px;
+            border:1px solid red;
+        }
+        .contacto{
+            border:none;
+            outline:none;
+            border-bottom: 1px solid red;
+        }
+        .contacto h1{
+            text-align: center;
+            font-size: 4vh;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 0px 0px 20px;
+            margin-bottom: 15px;
+        }
+        .contacto img{
+            width:99%;
+            margin-bottom: 40px;
+        }
+        .contacto2{
+            margin-left:auto;
+            margin-right: auto;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 20px black;
+        }
+        .ima{
+            margin-left: auto;
+            margin-right: auto;
+          }
+        .ima img{
+            width:100%;
+            height:auto;
+        }    
+        .contacto2 p{
+            text-align: center;
+            font-size: 2vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; 
+        }
+
+        /*tablet*/
+        @media only screen and (min-width:432px){
+          .col-m-1{width: 8.33%;}
+          .col-m-2{width: 16.66%;}
+          .col-m-3{width: 25%;}
+          .col-m-4{width: 33.33%;}
+          .col-m-5{width: 41.66%;}
+          .col-m-6{width: 50%;}
+          .col-m-7{width: 58.33%;}
+          .col-m-8{width: 66.66%;}
+          .col-m-9{width: 75%;}
+          .col-m-10{width: 83.33%;}
+          .col-m-11{width: 91.66%;}
+          .col-m-12{width: 100%;}  
+          nav{
+            position: fixed;
+            background-color:black;
+            color:white;
+            height: 60px;       
+
+            text-align: right;
+            box-shadow: 0 0 10px red;
+            margin:0px;
+            width:100%;
+          } 
+          .imagen1{
+            float:right;
+            width: 90px;
+            height: auto;
+            margin-top: 0px;
+          }
+          .opciones{
+              display:none;
+          }
+          .navi a{
+              text-decoration: none;
+              color: white;
+          }
+          .navi2{
+              float:left;
+              background:transparent;
+              display:block;
+              border:1px solid transparent;
+              padding:15px 10px;
+              text-shadow: 0px 0px 15px white;
+              text-transform: uppercase;
+              font-size: 2vh;
+          }
+          .navi2 ul li{
+              float:left;
+              background:rgb(180, 57, 57);
+              display: block;
+              text-align: center;
+              border:1px solid transparent;
+              height:50px;
+              padding-left: 10px;
+              padding-right: 10px;
+              margin-left:10px;
+              text-shadow: 0px 0px 15px white;
+              text-transform: uppercase;
+              border-radius: 35px;
+              margin-top:5px;
+              width: 170px;
+              font-size:15px;
+          }
+          .navi2:hover {
+              background-color:white;
+              color:black;
+              text-shadow: 0px 0px 15px rgb(180, 57, 57);
+              border-radius: 35px;
+          }
+          .navi2:hover > a{
+              color:black;
+          }
+          .navi2 ul{
+              display:none;
+              position:absolute;
+              min-width:140px;
+          }
+          .navi2:hover > ul {
+              display:block;
+              margin-right:90px;
+              margin-top: 30px
+          }
+          .presentacion{
+              margin-top:60px;
+              background-image:url(https://www.solofondos.com/wp-content/uploads/2016/09/3040.jpg);
+              color:white;
+              display: inline-block;
+          }
+          .titulo h1{
+              text-align: center;
+              font-size: 7vh;
+              font-family: High Jersey;
+              text-shadow: 0px 0px 15px white;
+          }  
+          .cuadro1{
+              text-align: justify;
+              font-size: 2vh;
+              font-family: Berlin Sans FB;
+              background-color: transparent;
+              padding-left: 10px;
+              padding-right: 10px;
+          }  
+          .cuadro2{
+              background-color: transparent;
+              margin:0px;
+              margin-left:auto;
+              margin-right:auto;
+          }
+          .cuadro2 img{
+              width:100%;
+              height: 350px;
+              padding-left:15px;
+              padding-right:15px;
+          } 
+          .boton{
+              margin-left: auto;
+              margin-right: auto;
+          }
+          .boton a{
+              text-decoration: none;
+              color:white;
+              display: inline-block;
+              padding:15px 20px;
+              width: 100%;
+              background-color: rgb(138, 6, 6);
+              font-size:3vh;
+              font-family: Arial, Helvetica, sans-serif;
+              border-radius: 25px;
+              text-transform: uppercase;
+              margin-top: 30px;
+              text-align:center;
+          }  
+          .boton a:hover{
+              background-color: white;
+              color: rgb(138, 6, 6);
+          }
+          .ancla{
+              text-align: left;  
+          }
+          .ancla a{
+              text-decoration: none;
+              color: white;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 2.5vh;
+              display: inline-block;
+              padding:25px 20px;
+              text-transform: uppercase;
+              text-shadow: 0px 0px 15px rgb(180, 57, 57);
+              border:none;
+              outline:none;
+              border-left: 5px solid white;
+              margin-top: 30px;
+              margin-left: 30px; 
+          }
+          .espacio{
+              height:35px;
+          }
+          .apps{
+              padding-top: 90px;
+          }
+          .apps h1{
+              text-align: center;
+              font-size: 6vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              text-shadow: 0 0 20px black; 
+          }
+          .titulo2{
+              margin-top: 20px;
+              text-align: center;
+              font-size: 5vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold; 
+          }
+          .contenido1{
+              float:right;
+              margin-top: 30px;
+          }
+          .contenido1 p, .contenido1 ol{
+              text-align: justify;
+              font-size: 100%;
+              font-family: Berlin Sans FB;
+              background-color: transparent;
+              float:right;
+              color: black;
+              padding-left: 20px;
+              padding-right: 20px;
+          }
+          .contenido1 img{
+              float:left;
+              width:99%;
+              margin-bottom: 100px;
+          }
+          .imagen3{
+              margin-left:auto;
+              margin-right:auto;
+              margin-top: 30px;
+              margin-bottom: 40px;
+          }
+          .imagen3 img{
+              width:100%;
+              height: auto;
+              float:left;
+              height:620px;
+          }
+          .webs h1{
+              text-align: center;
+              font-size: 6vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              text-shadow: 0 0 20px black;
+          }
+          .titulo3{
+              text-align: center;
+              font-size: 5vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold; 
+          }
+          .contenido2{
+              float:right;
+          }
+          .contenido2 p, .contenido2 ul{
+              text-align: justify;
+              font-size: 100%;
+              font-family: Berlin Sans FB;
+              background-color: transparent;
+              float:left;
+              color: black;
+              padding-left: 20px;
+              padding-right: 20px;
+          }
+          .contenido2 img{
+              float:left;
+              width:99%;
+              margin-bottom:0px;
+          }
+          .imagen4{
+              float:right;
+              margin-top: 30px;
+              padding-right: 20px;
+              padding-left: 20px;
+          }
+          .imagen4 img{
+              width:100%;
+              height: auto;
+              float:left;
+              height:310px;
+              margin-bottom:5px;
+              border-radius: 15px;
+              border:1px solid red;
+          }
+          .desa{
+              margin-top: 100px;
+          }
+          .desa h1{
+              text-align: center;
+              font-size: 6vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              text-shadow: 0 0 20px black;
+              margin-top: 1250px;
+          }
+          .titulo4{
+              margin-top: 20px;
+              text-align: center;
+              font-size: 5vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold; 
+          }
+          .contenido3{
+              float:right;
+              margin-top: 0px;
+              margin-bottom: 100px;
+          }
+          .contenido3 p{
+              text-align: justify;
+              font-size: 100%;
+              font-family: Berlin Sans FB;
+              background-color: transparent;
+              float:right;
+              color: black;
+              padding-left: 20px;
+              padding-right: 20px;
+          }
+          .imagen5{
+              margin:0px;
+              float:right;
+              margin-top: 30px;
+              padding-right: 20px;
+              padding-left: 20px;
+          }
+          .imagen5 img{
+              width:99%;
+              height: auto;
+              float:left;
+              height:380px;
+              border-radius: 15px;
+              border:1px solid red;
+          }
+          .contacto{
+              border:none;
+              outline:none;
+              border-bottom: 1px solid red;
+          }
+          .contacto h1{
+              text-align: center;
+              font-size: 4vh;
+              color: rgb(138, 4, 4);
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold;
+              text-shadow: 0px 0px 20px;
+              margin-bottom: 15px;
+          }
+          .contacto img{
+              width:99%;
+              margin-bottom: 40px;
+          }
+          .contacto2{
+              margin-left:auto;
+              margin-right: auto;
+              background-color: black;
+              color: white;
+              box-shadow: 0 0 20px black;
+          }
+          .ima{
+              margin-left: auto;
+              margin-right: auto;
+            }
+          .ima img{
+              width:100%;
+              height:auto;
+          }    
+          .contacto2 p{
+              text-align: center;
+              font-size: 2vh;
+              font-family: Arial, Helvetica, sans-serif;
+              font-weight: bold; 
+          }
+        }  
+        /*pc*/
+        @media only screen and (min-width:769px){
+          .col-g-1{width: 8.33%;}
+          .col-g-2{width: 16.66%;}
+          .col-g-3{width: 25%;}
+          .col-g-4{width: 33.33%;}
+          .col-g-5{width: 41.66%;}
+          .col-g-6{width: 50%;}
+          .col-g-7{width: 58.33%;}
+          .col-g-8{width: 66.66%;}
+          .col-g-9{width: 75%;}
+          .col-g-10{width: 83.33%;}
+          .col-g-11{width: 91.66%;}
+          .col-g-12{width: 100%;} 
+          nav{
+            position:fixed;
+            background-color:black;
+            color:white;
+            height: 70px;
+            text-align: right;
+            box-shadow: 0 0 10px red;
+          }
+          .opciones{
+            display:block
+          }
+          nav a{
+            text-decoration: none;
+            color: rgb(180, 57, 57);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            display: inline-block;
+            padding:25px 15px;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px white;
+          }
+          nav a:hover{
+            border-radius: 35px;
+            background-color: white;
+            color: black;
+            text-shadow: 0px 0px 15px rgb(180, 57, 57);
+          }  
+          .navi{
+            display:none;
+          }
+          .imagen1{
+            float:left;
+            width: 90px;
+            height: auto;
+            margin-top: 5px;
+          }
+          .presentacion{
+              padding-top: 100px;
+              background-image:url(https://www.solofondos.com/wp-content/uploads/2016/09/3040.jpg);
+              color:white;
+              display: inline-block;
+          }
+          .titulo h1{
+              text-align: center;
+              font-size: 70px;
+              font-family: High Jersey;
+              text-shadow: 0px 0px 15px white;
+          }
+          .cuadro1{
+            text-align: left;
+            font-size: 20px;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            float:left;
+            padding-left: 100px;
+          }
+          .cuadro2{
+            background-color: transparent;
+            margin:0px;
+            float:left;
+            padding-left:100px;
+          }
+          .cuadro2 img{
+            width:100%;
+            height: 250px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .boton a{
+            text-decoration: none;
+            color:white;
+            display: inline-block;
+            padding:15px 20px;
+            width: 50%;
+            background-color: rgb(138, 6, 6);
+            font-size:20px;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 25px;
+            text-transform: uppercase;
+            margin-top: 30px;
+            text-align:center;
+            margin-left: 150px;
+          }  
+          .boton a:hover{
+              background-color: white;
+              color: rgb(138, 6, 6);
+          }
+          .ancla{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+          }
+          .ancla a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            display: inline-block;
+            padding:25px 20px;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 15px rgb(180, 57, 57);
+            border:none;
+            outline:none;
+            border-left: 5px solid white;
+            margin-top: 30px;
+          }
+          .espacio{
+            height:35px;
+          }
+          .apps h1{
+            text-decoration: none;
+            text-align: center;
+            font-size: 60px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(138, 4, 4);
+            text-shadow: 0px 0px 15px black;
+          }
+          .apps h2{
+            text-decoration: none;
+            text-align: center;
+            font-size: 45px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(95, 10, 10);
+          }
+          .apps .imagen3{
+            float:right;
+            margin-right: 75px;
+            padding-left: 35px;
+          }
+          .apps .imagen3 img{
+            width: 100%;
+            height:600px;
+          }
+          .apps p, .apps ol{
+            float:left;
+            margin-left:0px;
+            text-align:justify;
+          }
+          .apps p, .apps ol{
+            text-align: justify;
+            font-size: 100%;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .apps img{
+            float:left;
+            width:100%;
+            padding-bottom: 70px;
+            margin-left:0px;
+          }
+          .webs h1{
+            text-decoration: none;
+            text-align: center;
+            font-size: 60px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(138, 4, 4);
+            text-shadow: 0px 0px 15px black;
+          }
+          .webs h2{
+            text-decoration: none;
+            text-align: center;
+            font-size: 45px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(95, 10, 10);
+            padding-top: 30px;
+          }
+          .webs .imagen4{
+            float:right;
+            padding:0px;
+            margin-right:75px;
+          }
+          .webs .imagen4 img{
+            width: 100%;
+            margin-bottom: 10px;
+            height:250px;
+            border: 1px solid red;
+          }
+          .webs p, .webs ul{
+            float:left;
+            margin-left:35px;
+          }
+          .webs p, .webs ul{
+            text-align: justify;
+            font-size: 100%;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          .webs img{
+            float:left;
+            width:100%;
+            margin-left:35px;
+          } 
+          .desa h1{
+            margin-top: 700px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 60px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(138, 4, 4);
+            text-shadow: 0px 0px 15px black;
+          }
+          .desa h2{
+            text-decoration: none;
+            text-align: center;
+            font-size: 45px;
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(95, 10, 10);
+            padding-top: 30px;
+          }
+          .desa .imagen5{
+            float:right;
+            padding:0px;
+            margin-right:35px;
+          }
+          .desa .imagen5 img{
+            width: 100%;
+            margin-bottom: 10px;
+            height:380px;
+            border: 1px solid red;
+          }
+          .desa p{
+            float:left;
+            margin-left:35px;
+          }
+          .desa p{
+            text-align: justify;
+            font-size: 100%;
+            font-family: Berlin Sans FB;
+            background-color: transparent;
+            color: black;
+            padding-left: 20px;
+            padding-right: 20px;
+          } 
+          .contacto{
+            border:none;
+            outline:none;
+            border-bottom: 1px solid red;
+          }
+          .contacto h1{
+            text-align: center;
+            font-size: 45px;
+            color: rgb(138, 4, 4);
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-shadow: 0px 0px 20px; 
+          }
+          .contacto img{
+            width:100%;
+          }
+          .contacto2{
+            margin-left:auto;
+            margin-right: auto;
+            background-color: black;
+            color: white;
+            box-shadow: 0 0 20px black;
+          }
+          .ima{
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .ima img{
+            width:100%;
+            height:auto;
+          }
+          .contacto2 p{
+            text-align: center;
+            font-size: 2vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold; 
+          }
+          
+        }  
+      </style>    
+</head>
+<body>
+    <nav class="col-12 col-m-12 col-g-12">
+        <img src="img/KePixel (1).png" class="imagen1">
+        <div class="opciones">
+          <a href="desarrollo-apps.html">Desarrollo de Apps</a>
+          <a href="diseño-web.html">Tiendas/Paginas Online</a>
+          <a href="pag-contacto.html">Contacto</a>
+        </div>
+          <ul class="navi">
+            <li class="navi2"><a href="">¿Qué Necesita?</a>
+                <ul class="navi3">
+                  <li><a href="desarrollo-apps.html">Desarrollo de Apps</a></li>
+                  <li><a href="diseño-web.html">Tiendas/Paginas Online</a></li>
+                  <li><a href="pag-contacto.html">Contacto</a></li>
+                </ul>
+           </li>    
+    </nav>
+    <div class="col-12 col-m-12 col-g-12 presentacion">
+        <div class="col-12 col-m-12 col-g-12 titulo"> 
+          <h1>Ke Pixel</h1><br><br>
+        </div>  
+        <div class="col-12 col-m-12 col-g-6 cuadro1">
+            <p>Ke Pixel es una Empresa De Desarrollo Web que realiza tabajos para empresas y/o para usuarios independiente, los trabajos van desde diseño web, tiendas online, desarrollo de aplicaciones móviles y apps para PC y consultoría digital para empresas.Nos centramos en la creación y diseño de páginas web responsive para garantizarles a tus usuarios una experiencia cómoda e intuitiva mientras navegan en tu sitio.<br><br>Descubre cómo aprovechar la transformación digital en 2021. Nos apasiona crear soluciones web y aplicaciones de éxito para nuestros clientes.</p>
+        </div>
+        <div class="col-12 col-m-12 col-g-5 cuadro2">
+          <img src="img/equipo_gaming.png" class="col-12 col-g-10">
+        </div> 
+        <div class="col-6 col-m-6 col-g-6 boton">
+          <a href="pag-contacto.html">CONTACTO</a>
+        </div> 
+        <div class="col-12 col-m-12 col-g-8 ancla">
+          <a href="#app">Desarrollo de apps</a>
+          <a href="#diseño">Diseño Web & Tiendas Online</a>
+          <a href="#desarrollo">Desarrollo Web</a>
+        </div> 
+        <div class="col-12 col-m-12 col-g-12 espacio"></div> 
+    </div>
+    <a name="app"></a>
+    <div class="col-12 col-m-12 col-g-12 apps">
+      <div class="col-12 col-g-12 tituloa">
+        <h1>Desarrollo de Aplicaciones</h1>
+      </div>
+      <div class="col-8 col-m-6 col-g-3 imagen3">
+          <img src="https://appdesign.dev/wp-content/uploads/2021/04/taxi-app.jpg">
+      </div>
+      <div class="col-12 col-m-12 col-g-7 contenido1">
+          <h2 class="titulo2">¿Cómo creamos tu aplicación móvil?</h2>
+          <p class="parrafos">Utilizamos metodologías ágiles para adaptar cada aplicaciónes a nuestros clientes de forma personalizada. Creamos aplicaciones en 3 fases:<br><br></p>
+          <ol type="none">
+
+            <li><b> Diseño de prototipo:</b> diseñamos el prototipo de tu app. El coste del diseño de un prototipo para una aplicación cuesta solo el 10 % del total. Nuestros clientes pueden solicitan solo el diseño para buscar financiación.<br><br></li>
+            <li><b> Especificación de funciones:</b> elaboramos un documento técnico para especificar todas las funciones incluidas en la aplicación.<br><br></li>
+            <li><b> Desarrollo de la aplicación:</b> una vez confirmado el diseño y funciones de la app, nuestros ingenieros desarrollarán la parte interna, conexiones externas, paneles de administración y funciones de tu app.<br><br></li>
+          </ol>
+          <p>Nuestras soluciones son robustas y confiables. Utilizamos la tecnología de desarrollo de aplicaciones más actualizada y eficiente en nuestros servicios.<br><br>
+          Desarrollamos aplicaciones con React Native. Algunas aplicaciones desarrolladas con la tecnología React Native:</p>
+          <img src="https://appdesign.dev/wp-content/uploads/2021/04/aplicaciones-desarrolladas-con-react.jpg">
+      </div>  
+    </div>
+    <div class="col-12 col-m-12 col-g-12 espacio2"></div>
+    <a name="diseño"></a>
+    <div class="col-12 col-m-12 col-g-12 webs">
+      <h1 class="col-12 col-m-12 col-g-12">Diseño de Páginas Web & Marketing Digital</h1>
+      <div class="col-12 col-m-12 col-g-4 imagen4">
+        <img src="https://appdesign.dev/wp-content/uploads/2021/04/disen%CC%83o-pa%CC%81ginas-web.jpg">
+        <img src="https://appdesign.dev/wp-content/uploads/2020/09/crear-tienda-online.jpg">
+      </div>
+      <div class="col-12 col-m-12 col-g-7 contenido2">
+        <h2 class="titulo3">¿Cómo creamos tu Página Web y Tienda Online?</h2><br><br>
+        <p>Creación de páginas web profesionales y tiendas online modernas.</p>
+          <ul type="none">
+            <li>Sitios web modernos: diseño web actual para páginas web profesionales.</li>
+            <li>¡Webs Rápidas como un rayo ⚡! : expertos en mejorar la velocidad de carga web.</li>
+            <li>Posicionamiento SEO: optimización, alta en buscadores y Google My Business GRATIS.</li>
+            <li>Seguridad Web: utilizamos servidores actualizados de alta seguridad en su última versión.</li>
+            <li>Soporte y garantía: aseguramos el funcionamiento de nuestros productos digitales.</li>
+            <li> Versión Móvil: tu web estará preparada para el usuario móvil.</li>
+            <li>Métodos de pago, gestión de productos, panel de administración, gestión de cupones descuento y mucho más.</li>
+          </ul>
+        <p>Más del 80% de las páginas web están construidas con WordPress, algunas de las empresas que confian en esta tecnología para su página web:</p>
+        <img src="https://appdesign.dev/wp-content/uploads/2021/04/pa%CC%81ginas-web-con-WordPress.jpg">
+      </div>  
+    </div>
+    <div class="col-12 col-m-12 col-g-12 espacio3"></div>
+    <a name="desarrollo"></a>
+    <div class="col-12 col-m-12 col-g-12 desa">
+      <h1 class="col-12 col-m-12 col-g-12">Empresa de Desarrollo Web</h1>
+      <div class="col-12 col-m-12 col-g-5 imagen5">
+        <img src="https://appdesign.dev/wp-content/uploads/2021/04/desarrollo-web-a-medida.jpg">
+      </div>
+      <div class="col-12 col-m-12 col-g-6 contenido3">
+        <h2 class="titulo4">Desarrollo de Aplicaciones Web</h2><br><br>
+        <p>Ke Pixel es una empresa líder en diseño y desarrollo de sitios web en todo el mundo. Nuestra agencia ofrece soluciones profesionales de desarrollo web, comercio electrónico y un servicio de diseño web creativo a un precio económico para una mejor experiencia de usuario.<br><br>Construimos plataformas educativas para escuelas de idiomas. Hacemos sistemas intranet, plataformas de comercio electrónico, project manager, gestión de recursos humanos, marketplace, ERP, CRM, plataformas de cursos online y directorios empresariales, software de gestión empresarial.<br><br> Desarrollo de sitios web para construir su imagen y reputación de marca.<br> Nuestros desarrolladores web tienen las habilidades y la experiencia para diseñar un sitio web moderno, inteligente y atractivo para captar la atención de los visitantes.</p>
+      </div>  
+    </div>
+    <div class="col-12 col-m-12 col-g-12 espacio4"></div>
+    <div class="col-12 col-m-12 col-g-12 contacto">
+      <h1>Tecnologías con las que trabajamos</h1>
+      <img src="https://appdesign.dev/wp-content/uploads/2020/08/desarrollo-aplicaciones.jpg">
+    </div>
+    <div class="col-12 col-m-12 col-g-12 contacto2">
+      <div class="col-3 col-m-2 col-g-2 ima">
+        <img src="img/KePixel (1).png">
+      </div>  
+      <p>Agencia de Diseño Web, Desarrollo de Aplicaciones y Software<br><br>
+        📍La Ceiba - Comayagua - SPS<br><br>
+        kepixel@design.com<br><br>
+      +504 9603-6528</p>
+    </div>
+</body>
+</html>
